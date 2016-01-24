@@ -3,10 +3,9 @@ def sorting_array
   words = []
   while true
     word = gets.chomp
-    if word == ''
-      break
-    end
-    words.push word
+    break if word.empty?
+
+    words << word
   end
     puts "Here they are, sorted: "
     puts words.sort
